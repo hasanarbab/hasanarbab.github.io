@@ -26,11 +26,6 @@
   @keyframes ping { 0% { transform: scale(1); opacity: .6; } 100% { transform: scale(2.6); opacity: 0; } }
   @media (prefers-reduced-motion: reduce) { .flow, .ping { animation: none; } html { scroll-behavior: auto; } }
   :focus-visible { outline: 3px solid #4f8bff; outline-offset: 3px; }
-
-  img {
-  max-height: 100%;  /* Prevents the image from overflowing its container */
-  width: auto;     /* Maintains the proper aspect ratio */
-}
 </style>
 </head>
 <body class="font-sans text-slate-700 bg-white antialiased">
@@ -39,12 +34,10 @@
 <header class="fixed inset-x-0 top-0 z-50 bg-navy-950/90 backdrop-blur border-b border-white/10">
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
     <a href="#top" class="flex items-center gap-2 text-white font-display font-semibold text-lg">
-      <img src="SmallNetworks-logo-850px.png" alt="Small Networks logo">
-      <!--
-      <span class="grid place-items-center h-8 w-8 rounded-lg bg-brand">        
-        <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"><circle cx="6" cy="6" r="2"/><circle cx="18" cy="6" r="2"/><circle cx="12" cy="18" r="2"/><path d="M8 6h8M7 8l4 8M17 8l-4 8"/></svg>
+      <span class="grid place-items-center h-8 w-8 rounded-lg">
+        <img src="SmallNetworks-logo-850px.png" alt="Small Networks logo">
+        <!-- <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"><circle cx="6" cy="6" r="2"/><circle cx="18" cy="6" r="2"/><circle cx="12" cy="18" r="2"/><path d="M8 6h8M7 8l4 8M17 8l-4 8"/></svg> -->
       </span>
-      -->
       Small Networks
     </a>
     <nav class="hidden md:flex items-center gap-8 text-sm text-slate-300" aria-label="Main">
