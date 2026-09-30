@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Small Networks | IT and network support in Melbourne</title>
-<meta name="description" content="Small Networks provides IT support, network design and security for Melbourne businesses, plus an online store for tech goods.">
+<meta name="description" content="Small Networks provides IT support, network design and security for Melbourne businesses.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -26,6 +26,11 @@
   @keyframes ping { 0% { transform: scale(1); opacity: .6; } 100% { transform: scale(2.6); opacity: 0; } }
   @media (prefers-reduced-motion: reduce) { .flow, .ping { animation: none; } html { scroll-behavior: auto; } }
   :focus-visible { outline: 3px solid #4f8bff; outline-offset: 3px; }
+
+  img {
+  max-width: 100%;  /* Prevents the image from overflowing its container */
+  height: auto;     /* Maintains the proper aspect ratio */
+}
 </style>
 </head>
 <body class="font-sans text-slate-700 bg-white antialiased">
@@ -35,7 +40,8 @@
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
     <a href="#top" class="flex items-center gap-2 text-white font-display font-semibold text-lg">
       <span class="grid place-items-center h-8 w-8 rounded-lg bg-brand">
-        <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"><circle cx="6" cy="6" r="2"/><circle cx="18" cy="6" r="2"/><circle cx="12" cy="18" r="2"/><path d="M8 6h8M7 8l4 8M17 8l-4 8"/></svg>
+        <img src="SmallNetworks-logo-850px.png" alt="Small Networks logo"> 
+        <!-- <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"><circle cx="6" cy="6" r="2"/><circle cx="18" cy="6" r="2"/><circle cx="12" cy="18" r="2"/><path d="M8 6h8M7 8l4 8M17 8l-4 8"/></svg> -->
       </span>
       Small Networks
     </a>
@@ -61,10 +67,10 @@
   <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-24 lg:py-32 grid lg:grid-cols-2 gap-12 items-center">
     <div>
       <h1 class="font-display font-bold text-white text-4xl sm:text-5xl xl:text-6xl leading-[1.08] tracking-tight">
-        IT that keeps your Melbourne business online.
+        IT that keeps your business online.
       </h1>
       <p class="mt-6 text-lg text-slate-300 max-w-xl leading-relaxed">
-        Small Networks looks after your computers, Wi-Fi, security and backups, so your team can get on with work. Need gear? Our online store has you covered.
+        Small Networks looks after your computers, Wi-Fi, security and backups, so your team can get on with work.
       </p>
       <div class="mt-10 flex flex-col sm:flex-row gap-4">
         <a href="#contact" class="inline-flex justify-center rounded-full bg-brand px-7 py-3.5 font-semibold text-white shadow-xl shadow-brand/30 hover:bg-brand-light transition">Get a free IT check-up</a>
